@@ -4,7 +4,6 @@ import { ShortenUrlService } from './shorten-url.service';
 import { validatePostbody } from './middlewares/validation.middleware';
 import { MongooseModule } from '@nestjs/mongoose';
 import {ShortenUrlSchema} from './schemas/shorten-url.schema';
-import { ConfigModule } from '@nestjs/config';
 
 @Module({
     imports: [

@@ -4,8 +4,6 @@ import { InjectModel } from '@nestjs/mongoose';
 import { ShortenUrlDto } from './dto/shorten-url.dto';
 import { ShortenUrl } from './interfaces/shorten-url.interface';
 
-const displayFields = ["url", "urlHash", "shortUrl"];
-
 @Injectable()
 export class ShortenUrlService {
 
