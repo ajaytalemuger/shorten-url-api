@@ -2,7 +2,7 @@
 
 ## Description
 
-API to shorten urls and redirect to original urls upon requesting shoretened url
+API to shorten urls and redirect to original urls upon requesting shortened url
 
 ## Installation
 
