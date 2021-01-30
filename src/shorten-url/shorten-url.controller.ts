@@ -8,7 +8,7 @@ export class ShortenUrlController {
   constructor(private readonly shortenUrlService: ShortenUrlService) { }
 
   @Get(':hash')
-  async getHello(@Param('hash') hash: string, @Res() res: Response) {
+  async redirectToUrl(@Param('hash') hash: string, @Res() res: Response) {
     const shortenUrl = await this.shortenUrlService.getUrl(hash);
     if (shortenUrl) {
       res.status(HttpStatus.FOUND).location(shortenUrl.url).send();
